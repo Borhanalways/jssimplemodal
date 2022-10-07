@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --green1-color: #219653;
+    --green3-color: #6FCF97;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.main{
+    display: flex;
+    gap: 5rem;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+}
+
+.left img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.right p{
+    color: #000000;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 500;
+}
+span{
+    border-bottom: 2px solid #000;
+}
+.last{
+    margin-bottom: 40px;
+}
+
+.right a{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--green1-color);
+    padding: 10px 26px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+/*Start popup css */
+
+#wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #02021076;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#content{
+    padding: 10px 20px;
+    max-width: 550px;
+    height: 470px;
+    margin: 100px auto;
+    background-color: white;
+    border: 1px solid grey;
+    position: relative;
+    border-radius: 8px;
+    top: 2%;
+    z-index: 10;
+}
+.content-img img{
+    display: block;
+    width: 95%;
+    margin: auto; 
+    margin-top: 25px;
+}
+
+#close i{
+    font-size: 1.2rem;
+    color: var(--green3-color);
+    float: right;
+    clear: both;
+    cursor: pointer;
+}
+
+.content-text{
+    text-align: center;
+}
+
+
+.content-text h2{
+    color: #54595E;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.content-text p{
+    font-size: 16px;
+    color: rgba(84, 89, 94, 0.6);
+    margin-bottom: 15px;
+}
+form input{
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.ptn{
+    max-width: 450px;
+    margin: auto;
+}
+.content-text a{
+    padding: 10px 174px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--green1-color);
+    background: rgba(33, 150, 83, 1);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
